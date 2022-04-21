@@ -16,35 +16,67 @@
 
     <script>
         $(document).ready(function(){
+
+            //제품 이미지 변경
             $('#product_infoimg img:nth-of-type(1)').click(function(){
-                $('#product_img img').attr('src','using_img/sub_img/color12.jpg')
+                $('#product_img img').attr('src','using_img/sub_img/noback_12.png')
             });
-        });
-        $(document).ready(function(){
+      
             $('#product_infoimg img:nth-of-type(2)').click(function(){
-                $('#product_img img').attr('src','using_img/sub_img/color24.jpg')
+                $('#product_img img').attr('src','using_img/sub_img/noback_24.png')
             });
-        });
-        $(document).ready(function(){
+      
             $('#product_infoimg img:nth-of-type(3)').click(function(){
-                $('#product_img img').attr('src','using_img/sub_img/color36.jpg')
+                $('#product_img img').attr('src','using_img/sub_img/noback_36.png')
             });
-        });
-        $(document).ready(function(){
+        
             $('#product_infoimg img:nth-of-type(4)').click(function(){
-                $('#product_img img').attr('src','using_img/sub_img/color48.jpg')
+                $('#product_img img').attr('src','using_img/sub_img/noback_48.png')
             });
-        });
-        $(document).ready(function(){
+       
             $('#product_infoimg img:nth-of-type(5)').click(function(){
-                $('#product_img img').attr('src','using_img/sub_img/color72.jpg')
+                $('#product_img img').attr('src','using_img/sub_img/noback_72.png')
             });
-        });
-        $(document).ready(function(){
+       
             $('#product_infoimg img:nth-of-type(6)').click(function(){
-                $('#product_img img').attr('src','using_img/sub_img/color132.jpg')
+                $('#product_img img').attr('src','using_img/sub_img/noback_132.png')
+            });
+
+            //선택한 이미지 효과
+            $('#product_infoimg img').click(function(){
+                $('#product_infoimg img').removeClass('active2');
+                $(this).addClass('active2');
+            });
+
+
+            //제품 갯수 선택
+            $('#select_set span').click(function(){
+                $('#select_set span').removeClass('active');
+                $(this).addClass('active');
+            });
+
+
+            //가격 변경
+            $('#select_set span:nth-of-type(1)').click(function(){
+                $('#set_price span:nth-of-type(2)').text('24,400₩');
+            });
+            $('#select_set span:nth-of-type(2)').click(function(){
+                $('#set_price span:nth-of-type(2)').text('53,000₩');
+            });
+            $('#select_set span:nth-of-type(3)').click(function(){
+                $('#set_price span:nth-of-type(2)').text('78,000₩');
+            });
+            $('#select_set span:nth-of-type(4)').click(function(){
+                $('#set_price span:nth-of-type(2)').text('105,000₩');
+            });
+            $('#select_set span:nth-of-type(5)').click(function(){
+                $('#set_price span:nth-of-type(2)').text('153,000₩');
+            });
+            $('#select_set span:nth-of-type(6)').click(function(){
+                $('#set_price span:nth-of-type(2)').text('262,000₩');
             });
         });
+
 
     </script>
 </head>
@@ -54,44 +86,17 @@
         <nav>
             <ul>
                 <li><a href="#">SHOP PRODUCTS</a>
-                    <ul class="sub1">
+                    <ul class="sub">
                         <li>
-                            <a href="#">Paints</a>
-                                <ul class="sub2">
-                                    <li><a href="#">Watercolor</a></li>
-                                    <li><a href="#">Oil paint</a></li>
-                                    <li><a href="#">Acrylic paint</a></li>
-                                </ul>
-                        </li>
-                        <li>
-                            <a href="#">Pencils</a>
-                              <ul class="sub2">
-                                  <li><a href="#">Drawing</a></li>
-                                  <li><a href="#">Water-based</a></li>
-                                  <li><a href="#">Pernanent</a></li>
-                              </ul>  
-                        </li>
-                        <li><a href="#">Pastels</a>
-                            <ul class="sub2">
-                                <li><a href="#">Pastel</a></li>
-                                <li><a href="#">Pencil pastel</a></li>
-                                <li><a href="#">Oil pastel</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Tools</a>
-                            <ul class="sub2">
-                                <li><a href="#">Brush</a></li>
-                                <li><a href="#">Paper</a></li>
-                                <li><a href="#">Easel</a></li>
-                                <li><a href="#">Canver</a></li>
-                                <li><a href="#">Etcs</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Aids</a></li>
+                            <a href="sub.html">Paints</a></li>
+                        <li><a href="sub.html">Pencils</a></li>
+                        <li><a href="sub.html">Pastels</a></li>
+                        <li><a href="sub.html">Tools</a></li>
+                        <li><a href="sub.html">Aids</a></li>
                     </ul>
                 </li>
                 <li><a href="#">INGEDIENTS</a></li>
-                <li id="logo"><a><img src="using_img/main_img/logo_STUDIO_PAINTING.png" alt="logo"></a></li>
+                <li id="logo"><a href="index.html"><img src="using_img/main_img/logo_STUDIO_PAINTING.png" alt="logo"></a></li>
                 <li><a href="#">ABOUT</a></li>
                 <li><a href="#">QUALITY</a></li>
                 <li><a href="#">DIGSET</a></li>
@@ -118,30 +123,81 @@
             <img src="using_img/sub_img/color12.jpg" alt="12 set">
         </div>
         <div id="product_purchase">
-            <div id="select_set">
-                <p>Select Set</p>
-                <span>12</span>
-                <span>24</span>
-                <span>36</span>
-                <span>48</span>
-                <span>72</span>
-                <span>132</span>
-            </div>
-            <div id="set_price">
-                <span>PRICE</span>
-                <span>24,400₩</span>
-            </div>
-
-            <div id="purchase_button">
-                <button type="button">Buy it right away</button>
-                <button type="button">ADD TO CART</button>
-            </div>
+            <form action="">
+                <div id="select_set">
+                    <p>Select Set</p>
+                    <span class="active">12</span>
+                    <span>24</span>
+                    <span>36</span>
+                    <span>48</span>
+                    <span>72</span>
+                    <span>132</span>
+                </div>
+                <div id="set_price">
+                    <span>PRICE</span>
+                    <span>24,400₩</span>
+                </div>
+                <div id="purchase_number">
+                    Number of orders <input type="number" min="1" max="10" value="1" autofocus required>
+                </div>
+                <div id="purchase_button">
+                    <button type="button">Buy it right away</button>
+                    <button type="button">ADD TO CART</button>
+                </div>
+            </form>
         </div>
+    </div>
+    <div id="shopping_info">
+        <ul>
+            <li><a href="#detail_page">상세정보</a></li>
+            <li><a href="#shopping_deli">배송안내</a></li>
+            <li><a href="">상품후기</a></li>
+            <li><a href="">상품문의</a></li>
+        </ul>
     </div>
     <div id="detail_page">
         <img src="using_img/sub_img/detail_page.jpg" alt="상세페이지">
     </div>
-    <div id="purchase_under"></div>
+    <div id="purchase_under">
+        <div id="shopping_deli">
+            
+            <h2>배송안내</h2>
+
+            <div id="delivery">
+                <ul>
+                    <li>
+                        배송료 :  50.000원 이상 구매 시 무료 배송, 그 이하는 각 박스당 3,000원의 배송비를 부담하셔야 합니다.<br>
+                        (도서, 산간, 오지, 제주도, 일부지역, 설치 배송 상품 등은 배송비가 추가될 수 있습니다.)
+                    </li>
+                    <li>
+                        부피가 큰 상품은 2박스 이상으로 따로 출고되는 경우가 있으며, 변심으로 인한 반품 시 2박스 이상에 대한 왕복 배송비를 부담하셔야 합니다.
+                    </li>
+                    <li>
+                        제품에 따라 출고지가 다른 경우, 변심반품시 왕복배송비가 개별부과될 수 있습니다.
+                    </li>
+                    <li>배송시간 : 입금 확인 후 평균 2~3일 이내에 받아보실 수 있습니다. (주말, 공휴일, 천재지변 제외)</li>
+                    <li>
+                        상품을 여러가지 구매하셨을 경우 여러 박스로 부분 포장되어 발송될 수 있으며, 배송 도착 날짜와 시간이 다를 수도 있습니다.
+                    </li>
+                    <li>
+                        오후 2시 이후 주문 후 취소나 배송지/옵션 변경 시 고객센터로 연락 주시면 신속히 변경 처리해드립니다.
+                    </li>
+                    <li>
+                        아래와 같은 경우 입금 확인이 어려워 배송이 지연될 수 있습니다. (고객센터로 연락요망)<br>
+                        주문자와 입금자가 달라 확인이 되지 않는 경우 / 주문 금액과 입금 금액이 다를 경우 / 주문보다 입금을 먼저 하신 경우
+                    </li>
+                    <li>
+                        주문 후 7일 이내에 입금하지 않으면 주문이 자동 취소됩니다.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
 
     <footer>
         <div id="footer_box">
@@ -159,7 +215,7 @@
                     <li><a href="#">Aids</a></li>
                 </ul>
             </div>
-    
+            
             <div id="footer_right">
                 <form id="email_address">
                     <span>Get unspammy deals and updates.</span><br>
