@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDIO PAINTING</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">    
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#product_infoimg img:nth-of-type(1)').click(function(){
+                $('#product_img img').attr('src','using_img/sub_img/color12.jpg')
+            });
+        });
+        $(document).ready(function(){
+            $('#product_infoimg img:nth-of-type(2)').click(function(){
+                $('#product_img img').attr('src','using_img/sub_img/color24.jpg')
+            });
+        });
+        $(document).ready(function(){
+            $('#product_infoimg img:nth-of-type(3)').click(function(){
+                $('#product_img img').attr('src','using_img/sub_img/color36.jpg')
+            });
+        });
+        $(document).ready(function(){
+            $('#product_infoimg img:nth-of-type(4)').click(function(){
+                $('#product_img img').attr('src','using_img/sub_img/color48.jpg')
+            });
+        });
+        $(document).ready(function(){
+            $('#product_infoimg img:nth-of-type(5)').click(function(){
+                $('#product_img img').attr('src','using_img/sub_img/color72.jpg')
+            });
+        });
+        $(document).ready(function(){
+            $('#product_infoimg img:nth-of-type(6)').click(function(){
+                $('#product_img img').attr('src','using_img/sub_img/color132.jpg')
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <header>
+        <div id="header_box">
+        <nav>
+            <ul>
+                <li><a href="#">SHOP PRODUCTS</a>
+                    <ul class="sub1">
+                        <li>
+                            <a href="#">Paints</a>
+                                <ul class="sub2">
+                                    <li><a href="#">Watercolor</a></li>
+                                    <li><a href="#">Oil paint</a></li>
+                                    <li><a href="#">Acrylic paint</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="#">Pencils</a>
+                              <ul class="sub2">
+                                  <li><a href="#">Drawing</a></li>
+                                  <li><a href="#">Water-based</a></li>
+                                  <li><a href="#">Pernanent</a></li>
+                              </ul>  
+                        </li>
+                        <li><a href="#">Pastels</a>
+                            <ul class="sub2">
+                                <li><a href="#">Pastel</a></li>
+                                <li><a href="#">Pencil pastel</a></li>
+                                <li><a href="#">Oil pastel</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Tools</a>
+                            <ul class="sub2">
+                                <li><a href="#">Brush</a></li>
+                                <li><a href="#">Paper</a></li>
+                                <li><a href="#">Easel</a></li>
+                                <li><a href="#">Canver</a></li>
+                                <li><a href="#">Etcs</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Aids</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">INGEDIENTS</a></li>
+                <li id="logo"><a><img src="using_img/main_img/logo_STUDIO_PAINTING.png" alt="logo"></a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">QUALITY</a></li>
+                <li><a href="#">DIGSET</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <div id="purchase_header">
+        <div id="product_info">
+            <p>- PRISMA -</p>
+            <h2>프리즈마 <br>유성 색연필 세트</h2>
+            <p>A set of oil colored pencils <br>from Prisma</p>
+            <div id="product_infoimg">
+                <img src="using_img/sub_img/12color.jpg" alt="12색 세트">
+                <img src="using_img/sub_img/24color.jpg" alt="24색 세트">
+                <img src="using_img/sub_img/36color.jpg" alt="36색 세트">
+                <img src="using_img/sub_img/48color.jpg" alt="48색 세트">
+                <img src="using_img/sub_img/72color.jpg" alt="72색 세트">
+                <img src="using_img/sub_img/132color.jpg" alt="132색 세트">
+            </div>
+        </div>
+        <div id="product_img">
+            <img src="using_img/sub_img/color12.jpg" alt="12 set">
+        </div>
+        <div id="product_purchase">
+            <div id="select_set">
+                <p>Select Set</p>
+                <span>12</span>
+                <span>24</span>
+                <span>36</span>
+                <span>48</span>
+                <span>72</span>
+                <span>132</span>
+            </div>
+            <div id="set_price">
+                <span>PRICE</span>
+                <span>24,400₩</span>
+            </div>
+
+            <div id="purchase_button">
+                <button type="button">Buy it right away</button>
+                <button type="button">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+    <div id="detail_page">
+        <img src="using_img/sub_img/detail_page.jpg" alt="상세페이지">
+    </div>
+    <div id="purchase_under"></div>
+
+    <footer>
+        <div id="footer_box">
+            <div id="footer_nav">
+                <span>SHOP</span>
+                <ul>
+                    <li><a href="#">Paints</a></li>
+                    <li>|</li>
+                    <li><a href="#">Pencil</a></li>
+                    <li>|</li>
+                    <li><a href="#">Pastels</a></li>
+                    <li>|</li>
+                    <li><a href="#">Tools</a></li>
+                    <li>|</li>
+                    <li><a href="#">Aids</a></li>
+                </ul>
+            </div>
+    
+            <div id="footer_right">
+                <form id="email_address">
+                    <span>Get unspammy deals and updates.</span><br>
+                    <div id="input">
+                            <input type="email" placeholder="Your Email Address"><br>
+                            <button type="button">
+                                <img src="using_img/main_img/go_icon.png" alt="go_icon">
+                            </button>
+                    </div>
+                </form>
+                <div id="icon_img">
+                    <a href=""><img src="using_img/main_img/facebook_icon.png" alt="facebook"></a>
+                    <a href=""><img src="using_img/main_img/twitter_icon.png" alt="twitter"></a>
+                    <a href=""><img src="using_img/main_img/instagram_icon.png" alt="instagram"></a>
+                </div>
+            </div>
+            <p>
+                본 사이트는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다. <br>
+                This site is intended for personal portfolios, not for commercial purposes.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,41 @@
+#purchase_header{width: 1300px; height: 600px; margin: 0 auto;
+                 background-color: darkseagreen; display: flex; flex-direction: row; justify-content: space-around;
+                 align-items: center;}
+
+    #product_info{width: 270px; height: 380px; background-color: bisque;}
+
+    #product_info p:first-of-type{font-family: 'Montserrat', sans-serif; font-size: 12px;
+                                  margin: 20px 0px;}
+    #product_info h2{font-size: 20px; margin-bottom: 40px;}
+    #product_info p:nth-of-type(2){font-size: 18px; font-family: 'Abhaya Libre', sans-serif;
+                                    margin-bottom: 50px;}
+
+    #product_infoimg{width: 210px; height: 145px; 
+                     display: flex; flex-wrap: wrap; justify-content: space-between;}
+    #product_infoimg img{height: 60px;}
+
+    #product_img{width: 530px; height: 380px; background-color: bisque;}
+
+    #product_purchase{width: 300px; height: 380px; background-color: bisque;}
+
+        #product_purchase p{font-family: 'Montserrat', sans-serif; font-size: 12px; margin: 20px 0px 40px 0px;}
+        #product_purchase #select_set{margin-bottom: 50px;}
+        #product_purchase #select_set span{border: 2px solid #272727; padding: 10px; border-radius: 50%; margin-right: 3px;}
+        #product_purchase #select_set span:last-child{letter-spacing: -2px;}
+        
+        #product_purchase #set_price{width: 300px; height: 16px; margin-bottom: 50px;}
+        #product_purchase #set_price span{font-family: 'Montserrat', sans-serif; color: #333; font-size: 16px;}
+        #product_purchase #set_price span:nth-of-type(2){float: right; margin-right: 5px;}
+
+        #purchase_button{display: flex; margin-left: 25px;}
+        #purchase_button button:first-child{background-color: white; color: #272727; border: 3px solid #272727;
+                                            padding: 15px 5px; font-family: 'Montserrat', sans-serif; box-sizing: border-box;}
+        #purchase_button button:nth-of-type(2){background-color: #272727; color: white; border: none; 
+                                            padding: 18px 8px; font-family: 'Montserrat', sans-serif; box-sizing: border-box;}
+
+#detail_page{width: 1300px; height: 11000px; margin: 0 auto;
+                 background-color: chocolate;}
+
+
+#purchase_under{width: 1300px; height: 500px; margin: 0 auto;
+                 background-color: darkkhaki;}
