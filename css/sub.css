@@ -26,7 +26,7 @@
         #product_purchase #select_set span{border: 2px solid #272727; padding: 10px; border-radius: 50%; margin-right: 3px;}
         #product_purchase #select_set span:last-child{letter-spacing: -2px;}
         
-        #select_set span:hover{box-shadow: 2px 2px 3px rgb(182, 182, 182); transition: 0.3s ease;}
+        #select_set span:hover{box-shadow: 2px 2px 3px rgb(182, 182, 182); transition: 0.3s ease; cursor: pointer;}
 
         #product_purchase #set_price{width: 300px; height: 16px; margin-bottom: 50px;}
         #product_purchase #set_price span{font-family: 'Montserrat', sans-serif; color: #333; font-size: 16px;}
@@ -47,28 +47,59 @@
         #purchase_button button:nth-of-type(2){background-color: #272727; color: white; border: none; 
                                             padding: 18px 8px; font-family: 'Montserrat', sans-serif; box-sizing: border-box;}
 
-#detail_page{width: 1300px; height: 11150px; margin: 0 auto;
-                 background-color: white;}
+        #purchase_button button:hover{cursor: pointer; box-shadow: 3px 3px 3px rgb(192, 192, 192); transition: 0.3s ease;}
+    
+        #shopping{width: 1300px; height: 100%; background-color: white; margin: 0 auto;}
 
-    #shopping_info{width: 1300px; margin: 0 auto}
-    #shopping_info > ul{width: 1300px; height: 100%; margin: 40px auto 0px;}
-    #shopping_info > ul > li{width: 325px; height: 100%; background-color: #eee; float: left; text-align: center;
-                             padding: 15px 0px; border: 1px solid #ddd; border-bottom: 1px solid #333;
-                             font-size: 18px; font-weight: bold; box-sizing: border-box;}
-    #shopping_info > ul > li > a{color: #333;}
-    #shopping_info > ul > li:nth-of-type(1){background-color: #fff; border: 1px solid #333; border-bottom: none; color: #333;}
+        #shopping > ul{width:1300px; height: 50px; margin: 0px auto;}
+        #shopping > ul > li{width: 325px; height: 100%; background-color: #272727; float: left;
+                                 text-align: center; padding: 15px 0px; border: 3px solid #272727;
+                                 font-size: 13px; font-weight: bold; box-sizing: border-box;color: white; position: relative; z-index: 10;}
 
-#purchase_under{width: 1300px; height: 1000px; margin: 0 auto;
-                 background-color: darkkhaki;}
-    #shopping{width: 1300px; height: 500px; margin: 0 auto; background-color: white;}
-    #shopping_deli > ul{width: 1300px; height: 50px; margin: 40px auto 0px;}
-    #shopping_deli > ul > li{width: 325px; height: 100%; background-color: #eee; float: left; text-align: center;
-                             padding: 15px 0px; border: 1px solid #ddd; border-bottom: 1px solid #333;
-                             font-size: 18px; font-weight: bold; box-sizing: border-box;}
-    #shopping_deli > ul > li > a{color: #333;}
-    #shopping_deli > ul > li:nth-of-type(2){background-color: #fff; border: 1px solid #333; border-bottom: none; color: #333;}
+        #shopping > ul > li:hover{cursor: pointer; transition: 0.3s ease; background-color: white; color: #272727; 
+                                  border-bottom: none;}
 
-    #shopping_deli > h2{float: left; padding: 50px 20px 0px; font-size: 19px;}
-    #shopping_deli > #delivery{width: 100%; height: 270px;}
-    #shopping_deli > #delivery > ul{display: block; width: 1200px; height: 280px; margin: 100px 35px 0px;}
-    #shopping_deli > #delivery > ul > li{font-size: 13px; list-style-type: disc; margin: 7px 10px; color: #666;}
+
+
+        #shopping > #shopping_info{width: 1300px; height: 11000px; margin: 0 auto; 
+                                    display: flex; justify-content: space-around; flex-flow: row wrap;}
+
+        #shopping > #detail_page img{width: 100%; height: 100%;}
+
+        #delivery{width: 1300px; height: 500px; display: none;}
+        #delivery > h2{float: left; padding: 50px 20px 0px; font-size: 19px;}
+        #delivery > #delivery_text{width: 100%; height: 270px; clear: both;}
+        #delivery > #delivery_text > ul{display: block; width: 1100px; height: 280px;
+                                        margin: 100px 35px 0px;}
+        #delivery > #delivery_text > ul > li{font-size: 13px; list-style: disc; margin: 15px 10px; color: #666; line-height: 20px;}
+
+        #review{width: 1300px; height: 400px; margin: 0px auto; display: none;}
+        #review_table table th{width: 80px; border-bottom: 1px solid #272727; color: #333;}
+        #review_table table td:first-of-type{width: 795px; border-bottom: 1px solid #272727;}
+        #review_table table td:first-of-type > a{color: #333;}
+        #review_table table td:nth-of-type(2){width: 105px; text-align: center; border-bottom: 1px solid #272727;}
+        #review_table table td:nth-of-type(3){width: 145px; text-align: center; border-bottom: 1px solid #272727;}
+        #review_table table td:last-of-type{width: 175px; text-align: center; border-bottom: 1px solid #272727;}
+        
+        #review > button{float: right; margin: 25px 0px; width: 120px; height: 30px;
+                                         color: #fff; font-size: 12px; background-color: #272727; border: 1px solid #ddd; }
+        #review > #review_table > table{display: inline-block; margin: 0px auto; border-top: 3px solid #272727;
+                                        line-height: 50px; width: 1300px; font-size: 13px; color: #333;}
+
+        #inquiry{width: 1300px; height: 400px; margin: 0 auto; display: none;}
+        #inquiry_table table th{width: 105px; border-bottom: 1px solid #272727; color: #333;}
+        #inquiry_table table td:first-of-type{width: 795px; border-bottom: 1px solid #272727;}
+        #inquiry_table table td:first-child > a{color: #333;}
+        #inquiry_table table td:nth-of-type(2){width: 105px; text-align: center; border-bottom: 1px solid #272727;}
+        #inquiry_table table td:nth-of-type(3){width: 145px; text-align: center; border-bottom: 1px solid #272727;}
+        #inquiry_table table td:last-of-type{width: 175px; text-align: center; border-bottom: 1px solid #272727;}
+
+        #inquiry > #inquiry_table{width: 1300px; height: 450px; margin: 0 auto; text-align: center;}
+        #inquiry > button{float: right; margin: 25px 0px 25px 10px; width: 120px; height: 30px; color: #fff;
+                          font-size: 12px; background-color: #272727; border: 1px solid #ddd;}
+        #inquiry > #inquiry_table > table{display: inline-block; margin:  0px auto; border-top: 3px solid #272727;
+                                          line-height: 50px; width: 1300px; font-size: 13px; color: #333;}
+
+        #shopping > ul > li:hover{cursor: pointer;}
+        
+        #review > button:hover, #inquiry > button:hover{cursor: pointer; box-shadow: 2px 2px 2px rgb(192, 192, 192); transition: 0.3s ease;}

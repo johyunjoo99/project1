@@ -77,15 +77,50 @@
             });
         });
 
+            //쇼핑 상세정보 변경
+            $(function(){
+                $('#shopping > ul > li:nth-of-type(1)').click(function(){
+                    $('#detail_page').fadeIn();
+                    $('#delivery').hide();
+                    $('#review').hide();
+                    $('#inquiry').hide();
+                    $('#shopping').css({height:11000});
+                });
+
+                $('#shopping > ul > li:nth-of-type(2)').click(function(){
+                    $('#delivery').fadeIn();
+                    $('#detail_page').hide();
+                    $('#review').hide();
+                    $('#inquiry').hide();
+                    $('#shopping').css({height:600});
+                });
+
+                $('#shopping > ul > li:nth-of-type(3)').click(function(){
+                    $('#review').fadeIn();
+                    $('#delivery').hide();
+                    $('#detail_page').hide();
+                    $('#inquiry').hide();
+                    $('#shopping').css({height:500});
+                });
+
+                $('#shopping > ul > li:nth-of-type(4)').click(function(){
+                    $('#inquiry').fadeIn();
+                    $('#delivery').hide();
+                    $('#detail_page').hide();
+                    $('#review').hide();
+                    $('#shopping').css({height:500});
+                });
+            });
 
     </script>
 </head>
+
 <body>
     <header>
         <div id="header_box">
         <nav>
             <ul>
-                <li><a href="#">SHOP PRODUCTS</a>
+                <li><a href="index.html">SHOP PRODUCTS</a>
                     <ul class="sub">
                         <li>
                             <a href="sub.html">Paints</a></li>
@@ -95,11 +130,11 @@
                         <li><a href="sub.html">Aids</a></li>
                     </ul>
                 </li>
-                <li><a href="#">INGEDIENTS</a></li>
+                <li><a href="index.html">INGEDIENTS</a></li>
                 <li id="logo"><a href="index.html"><img src="using_img/main_img/logo_STUDIO_PAINTING.png" alt="logo"></a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">QUALITY</a></li>
-                <li><a href="#">DIGSET</a></li>
+                <li><a href="index.html">ABOUT</a></li>
+                <li><a href="index.html">QUALITY</a></li>
+                <li><a href="index.html">DIGSET</a></li>
             </ul>
         </nav>
         </div>
@@ -147,57 +182,146 @@
             </form>
         </div>
     </div>
-    <div id="shopping_info">
+    <div id="shopping">
         <ul>
-            <li><a href="#detail_page">상세정보</a></li>
-            <li><a href="#shopping_deli">배송안내</a></li>
-            <li><a href="">상품후기</a></li>
-            <li><a href="">상품문의</a></li>
+            <li>상세정보</li>
+            <li>배송안내</li>
+            <li>상품후기</li>
+            <li>상품문의</li>
         </ul>
-    </div>
-    <div id="detail_page">
-        <img src="using_img/sub_img/detail_page.jpg" alt="상세페이지">
-    </div>
-    <div id="purchase_under">
-        <div id="shopping_deli">
-            
-            <h2>배송안내</h2>
+    
+        <div id="shopping_info">
+            <div id="detail_page">
+                <img src="using_img/sub_img/detail_page.jpg" alt="상세페이지">
+            </div>
 
             <div id="delivery">
-                <ul>
-                    <li>
-                        배송료 :  50.000원 이상 구매 시 무료 배송, 그 이하는 각 박스당 3,000원의 배송비를 부담하셔야 합니다.<br>
-                        (도서, 산간, 오지, 제주도, 일부지역, 설치 배송 상품 등은 배송비가 추가될 수 있습니다.)
-                    </li>
-                    <li>
-                        부피가 큰 상품은 2박스 이상으로 따로 출고되는 경우가 있으며, 변심으로 인한 반품 시 2박스 이상에 대한 왕복 배송비를 부담하셔야 합니다.
-                    </li>
-                    <li>
-                        제품에 따라 출고지가 다른 경우, 변심반품시 왕복배송비가 개별부과될 수 있습니다.
-                    </li>
-                    <li>배송시간 : 입금 확인 후 평균 2~3일 이내에 받아보실 수 있습니다. (주말, 공휴일, 천재지변 제외)</li>
-                    <li>
-                        상품을 여러가지 구매하셨을 경우 여러 박스로 부분 포장되어 발송될 수 있으며, 배송 도착 날짜와 시간이 다를 수도 있습니다.
-                    </li>
-                    <li>
-                        오후 2시 이후 주문 후 취소나 배송지/옵션 변경 시 고객센터로 연락 주시면 신속히 변경 처리해드립니다.
-                    </li>
-                    <li>
-                        아래와 같은 경우 입금 확인이 어려워 배송이 지연될 수 있습니다. (고객센터로 연락요망)<br>
-                        주문자와 입금자가 달라 확인이 되지 않는 경우 / 주문 금액과 입금 금액이 다를 경우 / 주문보다 입금을 먼저 하신 경우
-                    </li>
-                    <li>
-                        주문 후 7일 이내에 입금하지 않으면 주문이 자동 취소됩니다.
-                    </li>
-                </ul>
+                <h2>배송안내</h2>
+                <div id="delivery_text">
+                    <ul>
+                        <li>
+                            배송료 : 50,000원 이상 구매 시 무료배송, 그 이하는 각 박스당 3,000원의 배송비를 부담하셔야 합니다.<br>
+                            (도서, 산간, 오지, 제주도, 일부지역, 설치 배송 상품 등은 배송비가 추가될 수 있습니다.)
+                        </li>
+                        <li>
+                            부피가 큰 상품은 2박스 이상으로 따로 출고되는 경우가 있으며, 변심으로 인한 반품시 2박스 이상에 대한 왕복 배송비를 부담하셔야 합니다.
+                        </li>
+                        <li>
+                            제품에 따라 출고지가 다른 제품의 경우, 변심반품시 왕복배송비가 개별부과될 수 있습니다.
+                        </li>
+                        <li>
+                            배송시간 : 입금확인 후 평균 2~3일 이내에 받아보실 수 있습니다. (주말, 공휴일, 천재지변 제외)
+                        </li>
+                        <li>
+                            상품을 여러가지 구매하셨을 경우 여러 박스로 부분 포장되어 발송될 수 있으며, 배송 도착 날짜와 시간이 다를 수도 있습니다.
+                        </li>
+                        <li>
+                            오후 2시 이후 주문 후 취소나 배송지/옵션 변경 시 고객센터로 연락 주시면 신속히 변경 처리해드립니다.
+                        </li>
+                        <li>
+                            아래와 같은 경우 입금확인이 어려워 배송이 지연될 수 있습니다. (고객센터로 연락요망)<br>
+                            주문자와 입금자가 달라 확인이 되지 않는 경우 / 주문금액과 입금 금액이 다를 경우 / 주문보다 입금을 먼저 하신 경우
+                        </li>
+                        <li>
+                            주문 후 7일 이내에 입금하지 않으면 주문이 자동 취소됩니다.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="review">
+                <button>Write Review</button>
+                <div id="review_table">
+                    <table>
+                        <tr>
+                            <th>5</th>
+                            <td><a href="#">색이 진해서 힘조절만으로도 발색 조절이 돼서 좋아요!</a></td>
+                            <td>이지은</td>
+                            <td>2021.12.25</td>
+                            <td>답변완료</td>
+                        </tr>
+
+                        <tr>
+                            <th>4</th>
+                            <td><a href="#">색상이 많아서 편해요!</a></td>
+                            <td>김주은</td>
+                            <td>2021.11.21</td>
+                            <td>답변완료</td>
+                        </tr>
+
+                        <tr>
+                            <th>3</th>
+                            <td><a href="#">유성이라 색을 부드럽게 섞을 수 있는 게 bb</a></td>
+                            <td>이구름</td>
+                            <td>2020.09.24</td>
+                            <td>답변완료</td>
+                        </tr>
+
+                        <tr>
+                            <th>2</th>
+                            <td><a href="#">사람들이 좋다 좋다하는 건 다 이유가 있는 겁니다</a></td>
+                            <td>박수연</td>
+                            <td>2020.08.01</td>
+                            <td>답변완료</td>
+                        </tr>
+
+                        <tr>
+                            <th>1</th>
+                            <td><a href="#">좋아요</a></td>
+                            <td>오진호</td>
+                            <td>2020.07.15</td>
+                            <td>답변완료</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div id="inquiry">
+                <button>Write Inquiry</button>
+                <button>View all inquiries</button>
+
+                <div id="inquiry_table">
+                    <table>
+                        <tr>
+                            <th>5</th>
+                            <td><a href="#">배송문의</a></td>
+                            <td>이경은</td>
+                            <td>2021.12.07</td>
+                            <td>답변완료</td>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <td><a href="#">제품관련문의</a></td>
+                            <td>이소희</td>
+                            <td>2021.12.05</td>
+                            <td>답변완료</td>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <td><a href="#">제품불량문의</a></td>
+                            <td>김지은</td>
+                            <td>2021.08.27</td>
+                            <td>답변완료</td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td><a href="#">제품관련문의</a></td>
+                            <td>이대규</td>
+                            <td>2020.07.04</td>
+                            <td>답변완료</td>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <td><a href="#">배송문의</a></td>
+                            <td>유범수</td>
+                            <td>2021.06.05</td>
+                            <td>답변완료</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
-
-
-
-
-
 
     <footer>
         <div id="footer_box">
