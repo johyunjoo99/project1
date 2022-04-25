@@ -32,10 +32,14 @@
         #product_purchase #set_price span{font-family: 'Montserrat', sans-serif; color: #333; font-size: 16px;}
         #product_purchase #set_price span:nth-of-type(2){float: right; margin-right: 5px;}
 
-        #product_purchase #purchase_number{font-family: 'Montserrat', sans-serif; margin-bottom: 40px; display: flex; justify-content: space-between;}
-        #product_purchase #purchase_number input{margin: -5px 5px 0px 0px; width: 70px; height: 20px; text-align: center; 
-                                                font-size: 16px; font-family: 'Abhaya Libre', sans-serif; font-weight: bold;
-                                                border: 3px solid #272727;}
+        #product_purchase #purchase_number{font-family: 'Montserrat', sans-serif; margin-bottom: 40px; font-size: 16px;}
+
+        #purchase_number .number{float: right; width: 125px; height: 25px; display: flex; justify-content: space-around;  position: relative; bottom: 5px;}
+        #purchase_number .number input[type=text]{width: 60px; height: 20px; border: 2px solid #272727; text-align: center;
+                                                  font-family: 'Montserrat', sans-serif;}
+        #purchase_number .number label{background-color: #272727; color: white; width: 25px; height: 25px; display: inline-block;
+                                        border-radius: 5px; font-weight: bold; text-align: center; font-size: 20px;}
+        
         
         #product_purchase #purchase_number input:hover{box-shadow: 2px 2px 3px rgb(182, 182, 182); transition: 0.3s ease;}
         
@@ -59,9 +63,7 @@
         #shopping > ul > li:hover{cursor: pointer; transition: 0.3s ease; background-color: white; color: #272727; 
                                   border-bottom: none;}
 
-
-
-        #shopping > #shopping_info{width: 1300px; height: 11000px; margin: 0 auto; 
+        #shopping > #shopping_info{width: 1300px; height: auto; margin: 0 auto; 
                                     display: flex; justify-content: space-around; flex-flow: row wrap;}
 
         #shopping > #detail_page img{width: 100%; height: 100%;}

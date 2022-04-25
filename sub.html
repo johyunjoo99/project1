@@ -13,106 +13,8 @@
     <link rel="stylesheet" href="css/sub.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="javascript/sub.js"></script>
 
-    <script>
-        $(document).ready(function(){
-
-            //제품 이미지 변경
-            $('#product_infoimg img:nth-of-type(1)').click(function(){
-                $('#product_img img').attr('src','using_img/sub_img/noback_12.png')
-            });
-      
-            $('#product_infoimg img:nth-of-type(2)').click(function(){
-                $('#product_img img').attr('src','using_img/sub_img/noback_24.png')
-            });
-      
-            $('#product_infoimg img:nth-of-type(3)').click(function(){
-                $('#product_img img').attr('src','using_img/sub_img/noback_36.png')
-            });
-        
-            $('#product_infoimg img:nth-of-type(4)').click(function(){
-                $('#product_img img').attr('src','using_img/sub_img/noback_48.png')
-            });
-       
-            $('#product_infoimg img:nth-of-type(5)').click(function(){
-                $('#product_img img').attr('src','using_img/sub_img/noback_72.png')
-            });
-       
-            $('#product_infoimg img:nth-of-type(6)').click(function(){
-                $('#product_img img').attr('src','using_img/sub_img/noback_132.png')
-            });
-
-            //선택한 이미지 효과
-            $('#product_infoimg img').click(function(){
-                $('#product_infoimg img').removeClass('active2');
-                $(this).addClass('active2');
-            });
-
-
-            //제품 갯수 선택
-            $('#select_set span').click(function(){
-                $('#select_set span').removeClass('active');
-                $(this).addClass('active');
-            });
-
-
-            //가격 변경
-            $('#select_set span:nth-of-type(1)').click(function(){
-                $('#set_price span:nth-of-type(2)').text('24,400₩');
-            });
-            $('#select_set span:nth-of-type(2)').click(function(){
-                $('#set_price span:nth-of-type(2)').text('53,000₩');
-            });
-            $('#select_set span:nth-of-type(3)').click(function(){
-                $('#set_price span:nth-of-type(2)').text('78,000₩');
-            });
-            $('#select_set span:nth-of-type(4)').click(function(){
-                $('#set_price span:nth-of-type(2)').text('105,000₩');
-            });
-            $('#select_set span:nth-of-type(5)').click(function(){
-                $('#set_price span:nth-of-type(2)').text('153,000₩');
-            });
-            $('#select_set span:nth-of-type(6)').click(function(){
-                $('#set_price span:nth-of-type(2)').text('262,000₩');
-            });
-        });
-
-            //쇼핑 상세정보 변경
-            $(function(){
-                $('#shopping > ul > li:nth-of-type(1)').click(function(){
-                    $('#detail_page').fadeIn();
-                    $('#delivery').hide();
-                    $('#review').hide();
-                    $('#inquiry').hide();
-                    $('#shopping').css({height:11000});
-                });
-
-                $('#shopping > ul > li:nth-of-type(2)').click(function(){
-                    $('#delivery').fadeIn();
-                    $('#detail_page').hide();
-                    $('#review').hide();
-                    $('#inquiry').hide();
-                    $('#shopping').css({height:600});
-                });
-
-                $('#shopping > ul > li:nth-of-type(3)').click(function(){
-                    $('#review').fadeIn();
-                    $('#delivery').hide();
-                    $('#detail_page').hide();
-                    $('#inquiry').hide();
-                    $('#shopping').css({height:500});
-                });
-
-                $('#shopping > ul > li:nth-of-type(4)').click(function(){
-                    $('#inquiry').fadeIn();
-                    $('#delivery').hide();
-                    $('#detail_page').hide();
-                    $('#review').hide();
-                    $('#shopping').css({height:500});
-                });
-            });
-
-    </script>
 </head>
 
 <body>
@@ -173,7 +75,12 @@
                     <span>24,400₩</span>
                 </div>
                 <div id="purchase_number">
-                    Number of orders <input type="number" min="1" max="10" value="1" autofocus required>
+                    Number of orders
+                    <div class="number"> 
+                        <label class="minus">-</label>
+                        <input type="text" placeholder="1" value="1" class="price_value">
+                        <label class="plus">+</label>
+                    </div>
                 </div>
                 <div id="purchase_button">
                     <button type="button">Buy it right away</button>
