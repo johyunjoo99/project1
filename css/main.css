@@ -51,15 +51,15 @@
 
 #using_product{width: 1300px; height: 1000px; margin: 0 auto;
                 background-color: white;}
-    #using_product p{font-family: 'Montserrat', sans-serif; font-size: 20px; color: #333;
+    #using_product p{font-family: 'Abhaya Libre', serif; font-size: 50px; color: #333;
                     margin: 100px 20px;}
 
-#using_product .using_img{width: 360px; height: 600px; float: left; margin: 0px 36px;}
+#using_product .using_img{width: 360px; height: 600px; float: left; margin: 80px 36px;}
     #using_product img[alt="폰케이스"], #using_product img[alt="엽서"]{width: 360px; height: 360px; margin-top: 50px;}
     #using_product img[alt="청바지"]{width: 360px; height: 530px;}
 
-    #using_product span{font-family: 'Abhaya Libre', serif; font-size: 35px; color: #333;
-                        float: left; margin: 25px 0px;}
+    #using_product span{font-family: 'Montserrat', sans-serif; font-size: 20px; color: #333;
+                        float: left; margin: 15px 0px;}
 
 #yourself{width: 1300px; height: 647px; margin: 0 auto; position: relative;}
 #yourself p{text-align: center; font-family: 'Abhaya Libre', serif; color: #333; font-size: 55px;

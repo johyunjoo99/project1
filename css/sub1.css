@@ -1,0 +1,15 @@
+#menu{width: 1300px; height: 2500px; margin: 0 auto; background-color: bisque;}
+#menu > div > table{width: 1000px; height: 370px; border: 2px solid blue;}
+#menu > div > span{font-size: 60px; font-family: 'Montserrat', sans-serif; color: #333;}
+
+#menu div table tr:first-of-type{width: 200px; height: 70%; background-color: orange;}
+#menu div table tr:nth-of-type(2){width: 200px; height: 15%; background-color: orange;}
+#menu div table tr:nth-of-type(3){width: 200px; height: 15%; background-color: orange;}
+
+#menu div{display: flex; justify-content: space-between;}
+
+#paint_table{position: relative; top: 60px;}
+#pencil_table{position: relative; top: 170px;}
+#pastel_table{position: relative; top: 380px;}
+#tool_table{position: relative; top: 490px;}
+#aid_table{position: relative; top: 600px;}

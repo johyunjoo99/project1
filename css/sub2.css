@@ -1,0 +1,107 @@
+#purchase_header{width: 1300px; height: 600px; margin: 0 auto;
+                 background-color: white; display: flex; flex-direction: row; justify-content: space-around;
+                 align-items: center;}
+
+    #product_info{width: 270px; height: 380px; background-color: white;}
+
+    #product_info p:first-of-type{font-family: 'Montserrat', sans-serif; font-size: 12px;
+                                  margin: 20px 0px;}
+    #product_info h2{font-size: 20px; margin-bottom: 40px;}
+    #product_info p:nth-of-type(2){font-size: 18px; font-family: 'Abhaya Libre', sans-serif;
+                                    margin-bottom: 50px;}
+
+    #product_infoimg{width: 210px; height: 145px; 
+                     display: flex; flex-wrap: wrap; justify-content: space-between;}
+    #product_infoimg img{height: 60px;}
+
+    #product_infoimg img:hover{transform: scale(1.1); transition: 0.5s ease;}
+
+    #product_img{width: 530px; height: 380px; background-color: white;}
+    #product_img img:hover{transform: scale(1.05); transition: 0.3s ease;}
+
+    #product_purchase{width: 300px; height: 380px; background-color: white;}
+
+        #product_purchase p{font-family: 'Montserrat', sans-serif; font-size: 16px; margin: 20px 0px 40px 0px;}
+        #product_purchase #select_set{margin-bottom: 50px;}
+        #product_purchase #select_set span{border: 2px solid #272727; padding: 10px; border-radius: 50%; margin-right: 3px;}
+        #product_purchase #select_set span:last-child{letter-spacing: -2px;}
+        
+        #select_set span:hover{box-shadow: 2px 2px 3px rgb(182, 182, 182); transition: 0.3s ease; cursor: pointer;}
+
+        #product_purchase #set_price{width: 300px; height: 16px; margin-bottom: 50px;}
+        #product_purchase #set_price span{font-family: 'Montserrat', sans-serif; color: #333; font-size: 16px;}
+        #product_purchase #set_price span:nth-of-type(2){float: right; margin-right: 5px;}
+
+        #product_purchase #purchase_number{font-family: 'Montserrat', sans-serif; margin-bottom: 40px; font-size: 16px;}
+
+        #purchase_number .number{float: right; width: 125px; height: 25px; display: flex; justify-content: space-around;  position: relative; bottom: 5px;}
+        #purchase_number .number input[type=text]{width: 60px; height: 20px; border: 2px solid #272727; text-align: center;
+                                                  font-family: 'Montserrat', sans-serif;}
+        #purchase_number .number label{background-color: #272727; color: white; width: 25px; height: 25px; display: inline-block;
+                                        border-radius: 5px; font-weight: bold; text-align: center; font-size: 20px;}
+    
+        #product_purchase #purchase_number input:hover{box-shadow: 2px 2px 3px rgb(182, 182, 182); transition: 0.3s ease; cursor: pointer;}
+        #purchase_number .number label:hover{cursor: pointer;}
+        
+        .active{background-color: #272727; color: white;}
+
+        #purchase_button{display: flex; margin-left: 25px;}
+        #purchase_button button:first-child{background-color: white; color: #272727; border: 3px solid #272727;
+                                            padding: 15px 5px; font-family: 'Montserrat', sans-serif; box-sizing: border-box;}
+        #purchase_button button:nth-of-type(2){background-color: #272727; color: white; border: none; 
+                                            padding: 18px 8px; font-family: 'Montserrat', sans-serif; box-sizing: border-box;}
+
+        #purchase_button button:hover{cursor: pointer; box-shadow: 3px 3px 3px rgb(192, 192, 192); transition: 0.3s ease;}
+    
+        #shopping{width: 1300px; height: 100%; background-color: white; margin: 0 auto;}
+
+        #shopping > ul{width:1300px; height: 50px; margin: 0px auto;}
+        #shopping > ul > li{width: 325px; height: 100%; background-color: #272727; float: left;
+                                 text-align: center; padding: 15px 0px; border: 3px solid #272727;
+                                 font-size: 13px; font-weight: bold; box-sizing: border-box;color: white; position: relative; z-index: 10;}
+
+        #shopping > ul > li:hover{cursor: pointer; transition: 0.3s ease; background-color: white; color: #272727; 
+                                  border-bottom: none;}
+
+        #shopping > #shopping_info{width: 1300px; height: auto; margin: 0 auto; 
+                                    display: flex; justify-content: space-around; flex-flow: row wrap;}
+
+        #shopping > #detail_page img{width: 100%; height: 100%;}
+
+        #delivery{width: 1300px; height: 500px; display: none;}
+        #delivery > h2{float: left; padding: 50px 20px 0px; font-size: 19px;}
+        #delivery > #delivery_text{width: 100%; height: 270px; clear: both;}
+        #delivery > #delivery_text > ul{display: block; width: 1100px; height: 280px;
+                                        margin: 100px 35px 0px;}
+        #delivery > #delivery_text > ul > li{font-size: 13px; list-style: disc; margin: 15px 10px; color: #666; line-height: 20px;}
+
+        #review{width: 1300px; height: 400px; margin: 0px auto; display: none;}
+        #review_table table th{width: 80px; border-bottom: 1px solid #272727; color: #333;}
+        #review_table table td:first-of-type{width: 795px; border-bottom: 1px solid #272727;}
+        #review_table table td:first-of-type > a{color: #333;}
+        #review_table table td:nth-of-type(2){width: 105px; text-align: center; border-bottom: 1px solid #272727;}
+        #review_table table td:nth-of-type(3){width: 145px; text-align: center; border-bottom: 1px solid #272727;}
+        #review_table table td:last-of-type{width: 175px; text-align: center; border-bottom: 1px solid #272727;}
+        
+        #review > button{float: right; margin: 25px 0px; width: 120px; height: 30px;
+                                         color: #fff; font-size: 12px; background-color: #272727; border: 1px solid #ddd; }
+        #review > #review_table > table{display: inline-block; margin: 0px auto; border-top: 3px solid #272727;
+                                        line-height: 50px; width: 1300px; font-size: 13px; color: #333;}
+
+        #inquiry{width: 1300px; height: 400px; margin: 0 auto; display: none;}
+        #inquiry_table table th{width: 105px; border-bottom: 1px solid #272727; color: #333;}
+        #inquiry_table table td:first-of-type{width: 795px; border-bottom: 1px solid #272727;}
+        #inquiry_table table td:first-child > a{color: #333;}
+        #inquiry_table table td:nth-of-type(2){width: 105px; text-align: center; border-bottom: 1px solid #272727;}
+        #inquiry_table table td:nth-of-type(3){width: 145px; text-align: center; border-bottom: 1px solid #272727;}
+        #inquiry_table table td:last-of-type{width: 175px; text-align: center; border-bottom: 1px solid #272727;}
+
+        #inquiry > #inquiry_table{width: 1300px; height: 450px; margin: 0 auto; text-align: center;}
+        #inquiry > button{float: right; margin: 25px 0px 25px 10px; width: 120px; height: 30px; color: #fff;
+                          font-size: 12px; background-color: #272727; border: 1px solid #ddd;}
+        #inquiry > #inquiry_table > table{display: inline-block; margin:  0px auto; border-top: 3px solid #272727;
+                                          line-height: 50px; width: 1300px; font-size: 13px; color: #333;}
+
+        #shopping > ul > li:hover{cursor: pointer;}
+        
+        #review > button:hover, #inquiry > button:hover{cursor: pointer; box-shadow: 2px 2px 2px rgb(192, 192, 192); transition: 0.3s ease;}
