@@ -1,15 +1,23 @@
-#menu{width: 1300px; height: 2500px; margin: 0 auto; background-color: bisque;}
-#menu > div > table{width: 1000px; height: 370px; border: 2px solid blue;}
-#menu > div > span{font-size: 60px; font-family: 'Montserrat', sans-serif; color: #333;}
+#menu{width: 1300px; height: 2100px; margin: 0 auto; background-color: #e3e4e5;}
 
-#menu div table tr:first-of-type{width: 200px; height: 70%; background-color: orange;}
-#menu div table tr:nth-of-type(2){width: 200px; height: 15%; background-color: orange;}
-#menu div table tr:nth-of-type(3){width: 200px; height: 15%; background-color: orange;}
+#menu .product_title{font-size: 50px; font-family: 'Montserrat', sans-serif; color: #444; 
+            display: inline-block; margin: 100px 0px 250px 20px; width: 100px;}
 
-#menu div{display: flex; justify-content: space-between;}
+#menu .product_box{float: right; width: 1100px; height: 294px; margin: 100px 0px 10px 0px;}
 
-#paint_table{position: relative; top: 60px;}
-#pencil_table{position: relative; top: 170px;}
-#pastel_table{position: relative; top: 380px;}
-#tool_table{position: relative; top: 490px;}
-#aid_table{position: relative; top: 600px;}
+#menu .product{width: 210px; height: 300px; float: right; margin: 0px 60px 0px 0px;}
+.menu_img{width: 210px; height: 160px; margin: 0px 0px 30px 0px;}
+.menu_img img{width: 210px;}
+
+.menu_text{width: 210px; height: 60px; margin: 5px 0px 10px 0px; text-align: center;
+           font-weight: bold; color: #333; line-height: 25px;
+           padding-top: 10px; border-top: 3px solid #dbdcdd;}
+.menu_text2{width: 210px; height: 30px; margin: 10px 0px 0px 0px; text-align: center;
+            color: #333; font-size: 16px;}
+.menu_text span{font-size: 14px;}
+
+
+
+#menu .product:hover{box-shadow: 0px 0px 4px rgb(165, 164, 164); transform: scale(1.1);
+                     transition: 0.3s ease;}
+#menu .product:hover .menu_img img{opacity: 0.5;}
